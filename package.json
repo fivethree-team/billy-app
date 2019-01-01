@@ -1,35 +1,35 @@
 {
-  "name": "@fivethree/billy-app",
-  "version": "0.3.0",
-  "description": "cli plugin system personal assistant.",
-  "main": "dist/index.js",
-  "scripts": {
-    "build": "node_modules/.bin/tsc -p .",
-    "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
-    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install",
-    "test": "npm i -g && billy-app"
-  },
-  "bin": {
-    "billy-app": "dist/index.js"
-  },
-  "preferGlobal": true,
-  "keywords": [
-    "typescript",
-    "cli",
-    "node",
-    "terminal"
-  ],
-  "author": "garygrossgarten",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^10.12.18",
-    "nodemon": "^1.18.9",
-    "ts-node": "^7.0.1",
-    "typescript": "^3.2.2"
-  },
-  "dependencies": {
-    "typescript-ioc": "^1.2.4",
-    "@fivethree/billy-core": "0.3.0",
-    "@fivethree/billy-plugin-core": "0.3.0"
-  }
+    "name": "@fivethree/billy-app",
+    "version": "0.3.3",
+    "description": "cli plugin system personal assistant.",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "node_modules/.bin/tsc -p .",
+        "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+        "refresh": "rm -rf ./node_modules ./package-lock.json && npm install",
+        "test": "npm i -g && billy"
+    },
+    "bin": {
+        "billy": "dist/index.js"
+    },
+    "preferGlobal": false,
+    "keywords": [
+        "typescript",
+        "cli",
+        "node",
+        "terminal"
+    ],
+    "author": "garygrossgarten",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^10.12.18",
+        "nodemon": "^1.18.9",
+        "ts-node": "^7.0.1",
+        "typescript": "^3.2.2"
+    },
+    "dependencies": {
+        "@fivethree/billy-core": "file:../billy-core",
+        "@fivethree/billy-plugin-core": "file:../billy-core-plugin",
+        "typescript-ioc": "^1.2.4"
+    }
 }

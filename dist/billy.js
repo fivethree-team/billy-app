@@ -11,7 +11,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const billy_core_1 = require("@fivethree/billy-core");
 let ExampleApplication = class ExampleApplication {
-    hello_world({ print }) {
+    hello_world({ print, gitClean }) {
+        gitClean();
         print('Hello World');
     }
 };
