@@ -1,6 +1,6 @@
 {
     "name": "@fivethree/billy-app",
-    "version": "0.3.5",
+    "version": "0.3.6",
     "description": "cli plugin system personal assistant.",
     "main": "dist/index.js",
     "scripts": {
