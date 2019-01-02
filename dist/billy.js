@@ -22,8 +22,8 @@ let ExampleApplication = class ExampleApplication {
     hello_world({ print, bump, push_to_remote }) {
         return __awaiter(this, void 0, void 0, function* () {
             print('Hello World!');
-            bump('0.3.6');
-            push_to_remote();
+            yield bump('0.3.6');
+            yield push_to_remote();
         });
     }
 };
