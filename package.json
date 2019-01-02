@@ -1,6 +1,6 @@
 {
     "name": "@fivethree/billy-app",
-    "version": "0.3.6",
+    "version": "0.3.7",
     "description": "cli plugin system personal assistant.",
     "main": "dist/index.js",
     "scripts": {
@@ -28,8 +28,8 @@
         "typescript": "^3.2.2"
     },
     "dependencies": {
-        "@fivethree/billy-core": "file:/Users/garygrossgarten/dev/things/billy/billy-core",
-        "@fivethree/billy-plugin-core": "file:/Users/garygrossgarten/dev/things/billy/billy-core-plugin",
+        "@fivethree/billy-core": "0.3.7",
+        "@fivethree/billy-plugin-core": "0.3.7",
         "typescript-ioc": "^1.2.4"
     }
 }

@@ -19,13 +19,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const billy_core_1 = require("@fivethree/billy-core");
 let ExampleApplication = class ExampleApplication {
-    hello_world({ print, bump, push_to_remote }) {
+    hello_world({ print }) {
         return __awaiter(this, void 0, void 0, function* () {
             print('Hello World!');
-            // const b = await bump('0.3.6');
-            // print(b);
-            const p = yield push_to_remote();
-            print(p);
         });
     }
 };
