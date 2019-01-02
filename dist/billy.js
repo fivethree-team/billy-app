@@ -22,7 +22,7 @@ let ExampleApplication = class ExampleApplication {
     hello_world({ print, bump }) {
         return __awaiter(this, void 0, void 0, function* () {
             print('Hello World!');
-            bump('test');
+            bump('0.3.6');
         });
     }
 };
