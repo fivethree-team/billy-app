@@ -8,4 +8,9 @@ export class ExampleApplication {
         print('Hello World!')
     }
 
+    @Lane('log')
+    async log({print, exec, app}){
+        print((await exec('ls ' + app.appDir + '/../node_modules')))
+    }
+
 }

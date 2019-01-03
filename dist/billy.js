@@ -24,6 +24,11 @@ let ExampleApplication = class ExampleApplication {
             print('Hello World!');
         });
     }
+    log({ print, exec, app }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            print((yield exec('ls ' + app.appDir + '/../node_modules')));
+        });
+    }
 };
 __decorate([
     billy_core_1.Lane('This is an example lane.\nThe only thing it really does is output Hello World! 👾'),
@@ -31,6 +36,12 @@ __decorate([
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], ExampleApplication.prototype, "hello_world", null);
+__decorate([
+    billy_core_1.Lane('log'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], ExampleApplication.prototype, "log", null);
 ExampleApplication = __decorate([
     billy_core_1.App()
 ], ExampleApplication);
