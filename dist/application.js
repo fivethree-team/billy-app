@@ -14,7 +14,7 @@ const billy_core_1 = require("@fivethree/billy-core");
 class Application {
 }
 __decorate([
-    billy_core_1.use(billy_plugin_core_1.CorePlugin),
+    billy_core_1.usesPlugins(billy_plugin_core_1.CorePlugin),
     __metadata("design:type", Object)
 ], Application.prototype, "this", void 0);
 exports.Application = Application;
