@@ -1,16 +1,12 @@
-import { App, Lane, LaneContext } from "@fivethree/billy-core";
+import { App, Lane } from "@fivethree/billy-core";
+import { Application } from "./application";
 
 @App()
-export class ExampleApplication {
+export class ExampleApplication extends Application {
 
     @Lane('This is an example lane.\nThe only thing it really does is output Hello World! 👾')
-    async hello_world({ print }: LaneContext) {
-        print('Hello World!')
-    }
-
-    @Lane('log')
-    async log({print, exec, app}){
-        print((await exec('ls ' + app.appDir + '/../node_modules')))
+    async hello_world() {
+        this.print('Hello World!')
     }
 
 }

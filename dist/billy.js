@@ -18,30 +18,20 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const billy_core_1 = require("@fivethree/billy-core");
-let ExampleApplication = class ExampleApplication {
-    hello_world({ print }) {
+const application_1 = require("./application");
+let ExampleApplication = class ExampleApplication extends application_1.Application {
+    hello_world() {
         return __awaiter(this, void 0, void 0, function* () {
-            print('Hello World!');
-        });
-    }
-    log({ print, exec, app }) {
-        return __awaiter(this, void 0, void 0, function* () {
-            print((yield exec('ls ' + app.appDir + '/../node_modules')));
+            this.print('Hello World!');
         });
     }
 };
 __decorate([
     billy_core_1.Lane('This is an example lane.\nThe only thing it really does is output Hello World! 👾'),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object]),
+    __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
 ], ExampleApplication.prototype, "hello_world", null);
-__decorate([
-    billy_core_1.Lane('log'),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", Promise)
-], ExampleApplication.prototype, "log", null);
 ExampleApplication = __decorate([
     billy_core_1.App()
 ], ExampleApplication);
