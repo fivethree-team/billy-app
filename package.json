@@ -2,15 +2,15 @@
     "name": "@fivethree/billy-app",
     "version": "0.5.4",
     "description": "cli plugin system personal assistant.",
-    "main": "dist/index.js",
+    "main": "dist/generated/index.js",
     "scripts": {
         "build": "node_modules/.bin/tsc -p .",
-        "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+        "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/generated/index.ts",
         "refresh": "rm -rf ./node_modules ./package-lock.json && npm install",
         "test": "npm i -g && billy"
     },
     "bin": {
-        "billy": "dist/index.js"
+        "billy": "dist/generated/index.js"
     },
     "preferGlobal": false,
     "keywords": [
@@ -28,8 +28,13 @@
         "typescript": "^3.2.2"
     },
     "dependencies": {
-        "@fivethree/billy-core": "0.5.4",
-        "@fivethree/billy-plugin-core": "0.5.4",
+        "@fivethree/billy-core": "file:/Users/garygrossgarten/dev/things/billy/billy-core",
+        "@fivethree/billy-plugin-core": "file:/Users/garygrossgarten/dev/things/billy/billy-core-plugin",
         "typescript-ioc": "^1.2.4"
+    },
+    "billy": {
+        "plugins": [
+            "@fivethree/billy-plugin-core"
+        ]
     }
 }

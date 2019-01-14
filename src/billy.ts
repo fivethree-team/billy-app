@@ -1,5 +1,5 @@
 import { App, Lane } from "@fivethree/billy-core";
-import { Application } from "./application";
+import { Application } from "./generated/application";
 
 @App()
 export class ExampleApplication extends Application {
