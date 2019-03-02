@@ -1,6 +1,6 @@
 {
     "name": "@fivethree/billy-app",
-    "version": "0.9.0",
+    "version": "0.9.1",
     "description": "billy example app / boilerplate",
     "main": "dist/index.js",
     "scripts": {
@@ -30,7 +30,7 @@
         "typescript-ioc": "^1.2.4"
     },
     "dependencies": {
-        "@fivethree/billy-core": "file:/Users/garygrossgarten/dev/things/billy/billy-core",
-        "@fivethree/billy-plugin-core": "file:/Users/garygrossgarten/dev/things/billy/billy-core-plugin"
+        "@fivethree/billy-core": "0.9.1",
+        "@fivethree/billy-plugin-core": "0.9.1"
     }
 }
