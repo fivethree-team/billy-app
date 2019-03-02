@@ -30,7 +30,7 @@
         "typescript-ioc": "^1.2.4"
     },
     "dependencies": {
-        "@fivethree/billy-core": "0.9.1",
-        "@fivethree/billy-plugin-core": "0.9.1"
+        "@fivethree/billy-core": "file:/Users/garygrossgarten/dev/things/billy/billy-core",
+        "@fivethree/billy-plugin-core": "file:/Users/garygrossgarten/dev/things/billy/billy-core-plugin"
     }
 }
