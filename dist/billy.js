@@ -18,8 +18,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const billy_core_1 = require("@fivethree/billy-core");
-const application_1 = require("./generated/application");
-let ExampleApplication = class ExampleApplication extends application_1.Application {
+const plugins_1 = require("./plugins");
+let ExampleApplication = class ExampleApplication extends plugins_1.Plugins {
     hello_world() {
         return __awaiter(this, void 0, void 0, function* () {
             this.print('Hello World!');
