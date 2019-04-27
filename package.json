@@ -1,6 +1,6 @@
 {
     "name": "@fivethree/billy-app",
-    "version": "0.9.4",
+    "version": "0.9.5",
     "description": "billy example app / boilerplate",
     "main": "dist/index.js",
     "scripts": {
@@ -30,7 +30,7 @@
         "typescript-ioc": "^1.2.4"
     },
     "dependencies": {
-        "@fivethree/billy-core": "0.9.4",
-        "@fivethree/billy-plugin-core": "0.9.4"
+        "@fivethree/billy-core": "0.9.5",
+        "@fivethree/billy-plugin-core": "0.9.5"
     }
 }
