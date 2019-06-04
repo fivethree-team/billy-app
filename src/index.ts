@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { CorePlugin } from '@fivethree/billy-plugin-core';
 import { App, Command, usesPlugins } from "@fivethree/billy-core";
 
