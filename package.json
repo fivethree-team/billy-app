@@ -1,6 +1,6 @@
 {
     "name": "@fivethree/billy-app",
-    "version": "0.9.5",
+    "version": "0.10.0",
     "description": "billy example app / boilerplate",
     "main": "dist/index.js",
     "scripts": {
