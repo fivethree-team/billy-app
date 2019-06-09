@@ -1,6 +1,6 @@
 {
     "name": "@fivethree/billy-app",
-    "version": "0.10.1",
+    "version": "0.11.0",
     "description": "billy example app / boilerplate",
     "repository": {
         "type": "git",
@@ -32,8 +32,8 @@
         "typescript": "^3.2.2"
     },
     "dependencies": {
-        "@fivethree/billy-core": "0.10.1",
-        "@fivethree/billy-plugin-core": "0.10.1"
+        "@fivethree/billy-core": "0.11.0",
+        "@fivethree/billy-plugin-core": "0.11.0"
     },
     "files": [
         "dist"
