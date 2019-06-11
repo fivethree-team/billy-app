@@ -18,7 +18,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const billy_plugin_core_1 = require("@fivethree/billy-plugin-core");
 const billy_core_1 = require("@fivethree/billy-core");
 let ExampleApplication = class ExampleApplication {
     hello() {
@@ -28,8 +27,7 @@ let ExampleApplication = class ExampleApplication {
     }
 };
 __decorate([
-    billy_core_1.usesPlugins(billy_plugin_core_1.CorePlugin),
-    billy_core_1.Command('This is an example lane.\nThe only thing it really does is output Hello World! 👾'),
+    billy_core_1.Command('The only thing it really does is output Hello World! 👾'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)

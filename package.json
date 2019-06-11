@@ -1,6 +1,6 @@
 {
     "name": "@fivethree/billy-app",
-    "version": "0.12.3",
+    "version": "0.12.5",
     "description": "billy example app / boilerplate",
     "repository": {
         "type": "git",
@@ -23,7 +23,7 @@
         "node",
         "terminal"
     ],
-    "author": "garygrossgarten",
+    "author": "fivethree",
     "license": "MIT",
     "devDependencies": {
         "@types/node": "^10.12.18",
@@ -32,8 +32,8 @@
         "typescript": "^3.2.2"
     },
     "dependencies": {
-        "@fivethree/billy-core": "0.12.3",
-        "@fivethree/billy-plugin-core": "0.12.3"
+        "@fivethree/billy-core": "0.12.5",
+        "@fivethree/billy-plugin-core": "0.12.5"
     },
     "files": [
         "dist"
